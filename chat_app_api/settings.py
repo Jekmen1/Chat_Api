@@ -54,7 +54,7 @@ EMAIL_HOST = 'smtp.your-email-provider.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'jekokobakidze@gmail.com'
-EMAIL_HOST_PASSWORD = 'jekojeko123'
+EMAIL_HOST_PASSWORD = 'PASSWORD'
 
 
 CHANNEL_LAYERS = {
