@@ -9,7 +9,7 @@ class RoomSerializer(serializers.ModelSerializer):
 class MessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Message
-        fields = ['id', 'room', 'content', 'timestamp']
+        fields = ['id', 'room', 'content', 'image','timestamp']
 
     def create(self, validated_data):
         request = self.context.get('request')
