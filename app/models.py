@@ -13,6 +13,7 @@ class Message(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
     content = models.TextField(blank=True, null=True)
     image = models.ImageField(upload_to='message_images/', blank=True, null=True)
+    voice = models.FileField(upload_to='voice_messages/', blank=True, null=True)
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
