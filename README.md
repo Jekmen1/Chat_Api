@@ -1,4 +1,6 @@
-Technologies Used: Django Rest Framework (DRF) 
+Technologies Used: 
+
+Django Rest Framework (DRF) 
 
 Django Channels 
 
@@ -28,7 +30,7 @@ cd chat_app_api
 3. Install the dependencies:
 ```sh
 pip install -r requirements.txt
-```t
+```
 
 ###  Running
 
