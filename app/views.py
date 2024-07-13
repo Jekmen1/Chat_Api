@@ -1,10 +1,5 @@
-from rest_framework import generics, views
+from rest_framework import generics
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from django.conf import settings
-from django.http import JsonResponse
-import pyaudio
-import wave
-import os
 from .models import Message, Room
 from .serializers import MessageSerializer, RoomSerializer
 from .permissions import IsAdminOrReadOnly
