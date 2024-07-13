@@ -13,18 +13,35 @@ Redis
 Django-social-Auth
 .
 
-Installation
-Clone the repository:
+###  Installation
+
+1. Clone the  repository:
+```sh   
 https://github.com/Jekmen1/Chat_Api.git
-Change to the project directory:
+```
+
+2. Change to the project directory:
+```sh   
 cd chat_app_api
-Install the dependencies:
+```
+
+3. Install the dependencies:
+```sh
 pip install -r requirements.txt
-Running
+```t
+
+###  Running
+
 Use the following command to run :
 
+```sh
 python manage.py runserver
+```
+
 Build and run the Docker containers:
 
+```sh
 docker-compose up --build
+```
+
 Access the API at http://localhost:8000/
