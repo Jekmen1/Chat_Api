@@ -1,8 +1,14 @@
-from rest_framework import generics
+from rest_framework import generics, views
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from django.conf import settings
+from django.http import JsonResponse
+import pyaudio
+import wave
+import os
 from .models import Message, Room
 from .serializers import MessageSerializer, RoomSerializer
 from .permissions import IsAdminOrReadOnly
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
+
 
 class RoomListCreate(generics.ListCreateAPIView):
     queryset = Room.objects.all()
@@ -15,3 +21,4 @@ class MessageListCreate(generics.ListCreateAPIView):
     def get_queryset(self):
         room_id = self.kwargs.get('room_id')
         return Message.objects.filter(room_id=room_id)
+
