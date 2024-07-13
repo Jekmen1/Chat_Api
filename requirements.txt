@@ -10,7 +10,7 @@ django-templated-mail==1.1.1
 djangochannelsrestframework==1.2.0
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.1
-ipython==8.21.0
+ipython
 oauthlib==3.2.2
 redis==5.0.4
 requests==2.31.0
