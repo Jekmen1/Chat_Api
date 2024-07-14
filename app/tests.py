@@ -24,6 +24,7 @@ class RoomAPITests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertGreaterEqual(len(response.data), 1)
 
+
 class MessageAPITests(APITestCase):
     def setUp(self):
         self.admin_user = User.objects.create_superuser(username='admin', password='admin')
