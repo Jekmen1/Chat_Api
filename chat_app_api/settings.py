@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'app',
     'rest_framework',
-
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
